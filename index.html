@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Assignment 6 — JavaScript Basics</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Assignment 6 — JavaScript Basics</h1>
+    <p class="subtitle">DOM, Events, Form Validation, Mini To-Do</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Part 1. Introduction to JavaScript -->
+    <section id="part1" class="card">
+      <h2>Part 1. Introduction to JavaScript</h2>
+
+      <!-- Task 0 -->
+      <article class="task">
+        <h3>Task 0 — First Script</h3>
+        
+      </article>
+
+      <!-- Task 1 -->
+      <article class="task">
+        <h3>Task 1 — Variables &amp; Operators</h3>
+       
+        <button id="relog">Ещё раз вывести в консоль</button>
+      </article>
+    </section>
+
+    <!-- Part 2. DOM Manipulation -->
+    <section id="part2" class="card">
+      <h2>Part 2. DOM Manipulation</h2>
+
+      <!-- Task 2 -->
+      <article class="task">
+        <h3>Task 2 — Changing Content</h3>
+        <p id="contentP">Этот текст будет изменён по клику.</p>
+        <button id="changeTextBtn">Изменить текст</button>
+      </article>
+
+      <!-- Task 3 -->
+      <article class="task">
+        <h3>Task 3 — Changing Styles</h3>
+        <div id="styleBox" class="style-box">
+          new jeans
+        </div>
+        <div class="btn-row">
+          <button id="bgBtn">Сменить фон</button>
+          <button id="fsBtn">Увеличить шрифт</button>
+        </div>
+      </article>
+
+      <!-- Task 4 -->
+      <article class="task">
+        <h3>Task 4 — Creating &amp; Removing Elements</h3>
+        <ul id="itemList" class="pretty-list">
+          <li>coke</li>
+          <li>mirinda</li>
+        </ul>
+        <div class="btn-row">
+          <button id="addItemBtn">Add Item</button>
+          <button id="removeItemBtn">Remove Item</button>
+        </div>
+      </article>
+    </section>
+
+    <!-- Part 3. Events -->
+    <section id="part3" class="card">
+      <h2>Part 3. Events</h2>
+
+      <!-- Task 5 -->
+      <article class="task">
+        <h3>Task 5 — Mouse Events</h3>
+        <div id="hoverBox" class="hover-box" aria-label="Наведи мышь на меня"></div>
+
+      </article>
+
+      <!-- Task 6 -->
+      <article class="task">
+        <h3>Task 6 — Keyboard Events</h3>
+        <label for="liveInput" class="sr-only">Ввод</label>
+        <input id="liveInput" type="text" placeholder="..." />
+        <p>Текущее значение: <span id="liveOutput" class="live-output">—</span></p>
+      </article>
+
+      <!-- Task 7 -->
+      <article class="task">
+        <h3>Task 7 — Form Validation (optional)</h3>
+        <form id="contactForm" novalidate>
+          <div class="grid-2">
+            <div>
+              <label class="lbl">Имя</label>
+              <input type="text" id="name" placeholder="Ваше имя" required />
+            </div>
+            <div>
+              <label class="lbl">Email</label>
+              <input type="email" id="email" placeholder="name@example.com" required />
+            </div>
+          </div>
+          <div class="grid-2">
+            <div>
+              <label class="lbl">Пароль</label>
+              <input type="password" id="password" placeholder="••••••" required />
+            </div>
+            <div class="vcenter">
+              <button type="submit">Отправить форму</button>
+            </div>
+          </div>
+          <p id="formMsg" class="form-msg" role="alert" aria-live="polite"></p>
+        </form>
+      </article>
+    </section>
+
+    <!-- Part 4. Mini Project — To-Do -->
+    <section id="part4" class="card">
+      <h2>Part 4. Mini Project — To-Do</h2>
+
+      <!-- Task 8 -->
+      <article class="task">
+        <h3>Task 8 — Build a To-Do App</h3>
+        <div class="todo-bar">
+          <input id="todoInput" type="text" placeholder="Новая задача…" />
+          <button id="addTaskBtn">Add Task</button>
+        </div>
+        <ul id="todoList" class="todo-list"></ul>
+        <p class="hint">Клик по тексту — отметка «выполнено». Кнопка ✖ — удалить.</p>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 Aida Assignment 6 — JS Basics</small>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
